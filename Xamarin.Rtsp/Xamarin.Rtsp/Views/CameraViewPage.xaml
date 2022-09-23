@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:Ctrls="clr-namespace:Xamarin.Rtsp.Renderers" 
+             xmlns:CustomControls="clr-namespace:FormsJoystick.CustomControls" xmlns:ValueConverters="clr-namespace:FormsJoystick.ValueConverters"
+             x:Class="Xamarin.Rtsp.Views.CameraViewPage"
+             NavigationPage.HasNavigationBar="false">
+
+    <ContentPage.Content>
+        <Grid >
+            <Grid.RowDefinitions>
+        <RowDefinition Height="450"/>
+        <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition  Width="*"/>
+        <ColumnDefinition  Width="*"/>
+    </Grid.ColumnDefinitions>
+
+        <Ctrls:CameraView x:Name="cameraView" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"  Grid.Row="0" Grid.Column="0"/>
+        <Ctrls:CameraViewTwo x:Name="cameraViewTwo" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"  Grid.Row="0" Grid.Column="1"/>
+        <CustomControls:JoystickControl x:Name="JoystickControl" Grid.Row="1" Grid.Column="0"
+                                        HorizontalOptions="Center" VerticalOptions="End"  Margin="-100,0,0,0" 
+                                        HeightRequest="300" WidthRequest="200"/>
+
+            <!--<Grid.Resources>
+                <ResourceDictionary>
+                    <ValueConverters:DummyValueConverter x:Key="dummyConverter"/>
+                    <Style TargetType="Label">
+                        <Setter Property="HorizontalOptions" Value="Center"/>
+                        <Setter Property="VerticalOptions" Value="Center"/>
+                    </Style>
+                </ResourceDictionary>
+            </Grid.Resources>
+            <Grid BindingContext="{x:Reference Name=JoystickControl}" Grid.Row="2" Grid.Column="0">
+                <Label Text="Xposition" Grid.Row="0" Grid.Column="0"/>
+                <Label Text="{Binding Xposition}" Grid.Row="0" Grid.Column="1"/>
+
+                <Label Text="Yposition" Grid.Row="1" Grid.Column="0"/>
+                <Label Text="{Binding Yposition}" Grid.Row="1" Grid.Column="1"/>
+
+                <Label Text="Distance" Grid.Row="2" Grid.Column="0"/>
+                <Label Text="{Binding Distance}" Grid.Row="2" Grid.Column="1"/>
+
+                <Label Text="Angle" Grid.Row="3" Grid.Column="0"/>
+                <Label Text="{Binding Angle}" Grid.Row="3" Grid.Column="1"/>
+            </Grid>-->
+
+
+
+            <CustomControls:JoystickControl x:Name="JoystickControl1" Grid.Row="1" Grid.Column="1"
+                                        HorizontalOptions="Center" VerticalOptions="End" Margin="100,0,0,0" 
+                                        HeightRequest="300" WidthRequest="200"/>
+            
+            
+         
+
+        </Grid>
+        
+        
+    </ContentPage.Content>
+
+
+</ContentPage>

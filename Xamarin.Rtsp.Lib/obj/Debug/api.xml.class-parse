@@ -1,0 +1,2679 @@
+<api
+  api-source="class-parse">
+  <package
+    name="com.alexvas.rtsp"
+    jni-name="com/alexvas/rtsp">
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="AacParser"
+      jni-signature="Lcom/alexvas/rtsp/AacParser;"
+      source-file-name="AacParser.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="AacParser"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)V">
+        <parameter
+          name="aacMode"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;"
+          not-null="true" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="processRtpPacketAndGetSample"
+        native="false"
+        return="byte[]"
+        jni-return="[B"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="([BI)[B">
+        <parameter
+          name="data"
+          type="byte[]"
+          jni-type="[B"
+          not-null="true" />
+        <parameter
+          name="length"
+          type="int"
+          jni-type="I" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="BuildConfig"
+      jni-signature="Lcom/alexvas/rtsp/BuildConfig;"
+      source-file-name="BuildConfig.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="BuildConfig"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="BUILD_TYPE"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;release&quot;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="DEBUG"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="boolean"
+        type-generic-aware="boolean"
+        jni-signature="Z"
+        value="false"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="LIBRARY_PACKAGE_NAME"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;com.alexvas.rtsp&quot;"
+        visibility="public"
+        volatile="false" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/io/BufferedOutputStream;"
+      extends="java.io.BufferedOutputStream"
+      extends-generic-aware="java.io.BufferedOutputStream"
+      final="false"
+      name="LoggerOutputStream"
+      jni-signature="Lcom/alexvas/rtsp/LoggerOutputStream;"
+      source-file-name="RtspClient.java"
+      static="false"
+      visibility="">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="LoggerOutputStream"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/io/OutputStream;)V">
+        <parameter
+          name="out"
+          type="java.io.OutputStream"
+          jni-type="Ljava/io/OutputStream;"
+          not-null="true" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setLogging"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="true"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Z)V">
+        <parameter
+          name="logging"
+          type="boolean"
+          jni-type="Z" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="write"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="true"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="([BII)V">
+        <parameter
+          name="b"
+          type="byte[]"
+          jni-type="[B" />
+        <parameter
+          name="off"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="len"
+          type="int"
+          jni-type="I" />
+        <exception
+          name="java/io/IOException"
+          type="java.io.IOException"
+          type-generic-aware="java.io.IOException" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="RtpParser"
+      jni-signature="Lcom/alexvas/rtsp/RtpParser;"
+      source-file-name="RtpParser.java"
+      static="false"
+      visibility="" />
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="RtpParser.RtpHeader"
+      jni-signature="Lcom/alexvas/rtsp/RtpParser$RtpHeader;"
+      source-file-name="RtpParser.java"
+      static="true"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="RtpParser.RtpHeader"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="dumpHeader"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="cc"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="extension"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="marker"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="padding"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="payloadSize"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="payloadType"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="sequenceNumber"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="ssrc"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="long"
+        type-generic-aware="long"
+        jni-signature="J"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="timeStamp"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="long"
+        type-generic-aware="long"
+        jni-signature="J"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="version"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        visibility="public"
+        volatile="false" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="RtspClient"
+      jni-signature="Lcom/alexvas/rtsp/RtspClient;"
+      source-file-name="RtspClient.java"
+      static="false"
+      visibility="public">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="execute"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="hasCapability"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(II)Z">
+        <parameter
+          name="capability"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="capabilitiesMask"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="memcmp"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="([BI[BII)Z">
+        <parameter
+          name="source1"
+          type="byte[]"
+          jni-type="[B"
+          not-null="true" />
+        <parameter
+          name="offsetSource1"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="source2"
+          type="byte[]"
+          jni-type="[B"
+          not-null="true" />
+        <parameter
+          name="offsetSource2"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="num"
+          type="int"
+          jni-type="I" />
+      </method>
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="AUDIO_CODEC_AAC"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        value="0"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="AUDIO_CODEC_UNKNOWN"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        value="-1"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="RTSP_CAPABILITY_ANNOUNCE"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        value="8"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="RTSP_CAPABILITY_DESCRIBE"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        value="4"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="RTSP_CAPABILITY_GET_PARAMETER"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        value="1024"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="RTSP_CAPABILITY_NONE"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        value="0"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="RTSP_CAPABILITY_OPTIONS"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        value="2"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="RTSP_CAPABILITY_PAUSE"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        value="128"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="RTSP_CAPABILITY_PLAY"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        value="32"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="RTSP_CAPABILITY_RECORD"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        value="64"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="RTSP_CAPABILITY_REDIRECT"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        value="2048"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="RTSP_CAPABILITY_SETUP"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        value="16"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="RTSP_CAPABILITY_SET_PARAMETER"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        value="512"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="RTSP_CAPABILITY_TEARDOWN"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        value="256"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="VIDEO_CODEC_H264"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        value="0"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="VIDEO_CODEC_H265"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        value="1"
+        visibility="public"
+        volatile="false" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      enclosing-method-jni-type="Lcom/alexvas/rtsp/RtspClient;"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="RtspClient.1"
+      jni-signature="Lcom/alexvas/rtsp/RtspClient$1;"
+      source-file-name="RtspClient.java"
+      static="true"
+      visibility="" />
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Lcom/alexvas/rtsp/RtspClient$Track;"
+      extends="com.alexvas.rtsp.RtspClient.Track"
+      extends-generic-aware="com.alexvas.rtsp.RtspClient.Track"
+      final="false"
+      name="RtspClient.AudioTrack"
+      jni-signature="Lcom/alexvas/rtsp/RtspClient$AudioTrack;"
+      source-file-name="RtspClient.java"
+      static="true"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="RtspClient.AudioTrack"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="audioCodec"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="channels"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="config"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="byte[]"
+        type-generic-aware="byte[]"
+        jni-signature="[B"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="mode"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="sampleRateHz"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        visibility="public"
+        volatile="false" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="RtspClient.Builder"
+      jni-signature="Lcom/alexvas/rtsp/RtspClient$Builder;"
+      source-file-name="RtspClient.java"
+      static="true"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="RtspClient.Builder"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/net/Socket;Ljava/lang/String;Ljava/util/concurrent/atomic/AtomicBoolean;Lcom/alexvas/rtsp/RtspClient$RtspClientListener;)V">
+        <parameter
+          name="rtspSocket"
+          type="java.net.Socket"
+          jni-type="Ljava/net/Socket;"
+          not-null="true" />
+        <parameter
+          name="uriRtsp"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;"
+          not-null="true" />
+        <parameter
+          name="exitFlag"
+          type="java.util.concurrent.atomic.AtomicBoolean"
+          jni-type="Ljava/util/concurrent/atomic/AtomicBoolean;"
+          not-null="true" />
+        <parameter
+          name="listener"
+          type="com.alexvas.rtsp.RtspClient.RtspClientListener"
+          jni-type="Lcom/alexvas/rtsp/RtspClient$RtspClientListener;"
+          not-null="true" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="build"
+        native="false"
+        return="com.alexvas.rtsp.RtspClient"
+        jni-return="Lcom/alexvas/rtsp/RtspClient;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lcom/alexvas/rtsp/RtspClient;"
+        return-not-null="true" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="requestAudio"
+        native="false"
+        return="com.alexvas.rtsp.RtspClient.Builder"
+        jni-return="Lcom/alexvas/rtsp/RtspClient$Builder;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Z)Lcom/alexvas/rtsp/RtspClient$Builder;"
+        return-not-null="true">
+        <parameter
+          name="requestAudio"
+          type="boolean"
+          jni-type="Z" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="requestVideo"
+        native="false"
+        return="com.alexvas.rtsp.RtspClient.Builder"
+        jni-return="Lcom/alexvas/rtsp/RtspClient$Builder;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Z)Lcom/alexvas/rtsp/RtspClient$Builder;"
+        return-not-null="true">
+        <parameter
+          name="requestVideo"
+          type="boolean"
+          jni-type="Z" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="withCredentials"
+        native="false"
+        return="com.alexvas.rtsp.RtspClient.Builder"
+        jni-return="Lcom/alexvas/rtsp/RtspClient$Builder;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Ljava/lang/String;)Lcom/alexvas/rtsp/RtspClient$Builder;"
+        return-not-null="true">
+        <parameter
+          name="username"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="password"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="withDebug"
+        native="false"
+        return="com.alexvas.rtsp.RtspClient.Builder"
+        jni-return="Lcom/alexvas/rtsp/RtspClient$Builder;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Z)Lcom/alexvas/rtsp/RtspClient$Builder;"
+        return-not-null="true">
+        <parameter
+          name="debug"
+          type="boolean"
+          jni-type="Z" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="withUserAgent"
+        native="false"
+        return="com.alexvas.rtsp.RtspClient.Builder"
+        jni-return="Lcom/alexvas/rtsp/RtspClient$Builder;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/alexvas/rtsp/RtspClient$Builder;"
+        return-not-null="true">
+        <parameter
+          name="userAgent"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/io/IOException;"
+      extends="java.io.IOException"
+      extends-generic-aware="java.io.IOException"
+      final="true"
+      name="RtspClient.NoResponseHeadersException"
+      jni-signature="Lcom/alexvas/rtsp/RtspClient$NoResponseHeadersException;"
+      source-file-name="RtspClient.java"
+      static="true"
+      visibility="private" />
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="RtspClient.RtspClientKeepAliveListener"
+      jni-signature="Lcom/alexvas/rtsp/RtspClient$RtspClientKeepAliveListener;"
+      source-file-name="RtspClient.java"
+      static="true"
+      visibility="private">
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onRtspKeepAliveRequested"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </interface>
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="RtspClient.RtspClientListener"
+      jni-signature="Lcom/alexvas/rtsp/RtspClient$RtspClientListener;"
+      source-file-name="RtspClient.java"
+      static="true"
+      visibility="public">
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onRtspAudioSampleReceived"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="([BIIJ)V">
+        <parameter
+          name="data"
+          type="byte[]"
+          jni-type="[B"
+          not-null="true" />
+        <parameter
+          name="offset"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="length"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="timestamp"
+          type="long"
+          jni-type="J" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onRtspConnected"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/alexvas/rtsp/RtspClient$SdpInfo;)V">
+        <parameter
+          name="sdpInfo"
+          type="com.alexvas.rtsp.RtspClient.SdpInfo"
+          jni-type="Lcom/alexvas/rtsp/RtspClient$SdpInfo;"
+          not-null="true" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onRtspConnecting"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onRtspDisconnected"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onRtspFailed"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)V">
+        <parameter
+          name="message"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onRtspFailedUnauthorized"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onRtspVideoNalUnitReceived"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="([BIIJ)V">
+        <parameter
+          name="data"
+          type="byte[]"
+          jni-type="[B"
+          not-null="true" />
+        <parameter
+          name="offset"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="length"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="timestamp"
+          type="long"
+          jni-type="J" />
+      </method>
+    </interface>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="RtspClient.SdpInfo"
+      jni-signature="Lcom/alexvas/rtsp/RtspClient$SdpInfo;"
+      source-file-name="RtspClient.java"
+      static="true"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="RtspClient.SdpInfo"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="audioTrack"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="com.alexvas.rtsp.RtspClient.AudioTrack"
+        type-generic-aware="com.alexvas.rtsp.RtspClient.AudioTrack"
+        jni-signature="Lcom/alexvas/rtsp/RtspClient$AudioTrack;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="sessionDescription"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="sessionName"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="videoTrack"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="com.alexvas.rtsp.RtspClient.VideoTrack"
+        type-generic-aware="com.alexvas.rtsp.RtspClient.VideoTrack"
+        jni-signature="Lcom/alexvas/rtsp/RtspClient$VideoTrack;"
+        visibility="public"
+        volatile="false" />
+    </class>
+    <class
+      abstract="true"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="RtspClient.Track"
+      jni-signature="Lcom/alexvas/rtsp/RtspClient$Track;"
+      source-file-name="RtspClient.java"
+      static="true"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="RtspClient.Track"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="payloadType"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="request"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        visibility="public"
+        volatile="false" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/io/IOException;"
+      extends="java.io.IOException"
+      extends-generic-aware="java.io.IOException"
+      final="false"
+      name="RtspClient.UnauthorizedException"
+      jni-signature="Lcom/alexvas/rtsp/RtspClient$UnauthorizedException;"
+      source-file-name="RtspClient.java"
+      static="true"
+      visibility="private" />
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Lcom/alexvas/rtsp/RtspClient$Track;"
+      extends="com.alexvas.rtsp.RtspClient.Track"
+      extends-generic-aware="com.alexvas.rtsp.RtspClient.Track"
+      final="false"
+      name="RtspClient.VideoTrack"
+      jni-signature="Lcom/alexvas/rtsp/RtspClient$VideoTrack;"
+      source-file-name="RtspClient.java"
+      static="true"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="RtspClient.VideoTrack"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="pps"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="byte[]"
+        type-generic-aware="byte[]"
+        jni-signature="[B"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="sps"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="byte[]"
+        type-generic-aware="byte[]"
+        jni-signature="[B"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="videoCodec"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        visibility="public"
+        volatile="false" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="VideoRtpParser"
+      jni-signature="Lcom/alexvas/rtsp/VideoRtpParser;"
+      source-file-name="VideoRtpParser.java"
+      static="false"
+      visibility="">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="processRtpPacketAndGetNalUnit"
+        native="false"
+        return="byte[]"
+        jni-return="[B"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="([BI)[B">
+        <parameter
+          name="data"
+          type="byte[]"
+          jni-type="[B"
+          not-null="true" />
+        <parameter
+          name="length"
+          type="int"
+          jni-type="I" />
+      </method>
+    </class>
+  </package>
+  <package
+    name="com.alexvas.utils"
+    jni-name="com/alexvas/utils">
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="ByteUtils"
+      jni-signature="Lcom/alexvas/utils/ByteUtils;"
+      source-file-name="ByteUtils.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="ByteUtils"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="copy"
+        native="false"
+        return="byte[]"
+        jni-return="[B"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="([B)[B">
+        <parameter
+          name="src"
+          type="byte[]"
+          jni-type="[B"
+          not-null="true" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="memcmp"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="([BI[BII)Z">
+        <parameter
+          name="source1"
+          type="byte[]"
+          jni-type="[B"
+          not-null="true" />
+        <parameter
+          name="offsetSource1"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="source2"
+          type="byte[]"
+          jni-type="[B"
+          not-null="true" />
+        <parameter
+          name="offsetSource2"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="num"
+          type="int"
+          jni-type="I" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="NetUtils"
+      jni-signature="Lcom/alexvas/utils/NetUtils;"
+      source-file-name="NetUtils.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="NetUtils"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="closeSocket"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/net/Socket;)V">
+        <parameter
+          name="socket"
+          type="java.net.Socket"
+          jni-type="Ljava/net/Socket;" />
+        <exception
+          name="java/io/IOException"
+          type="java.io.IOException"
+          type-generic-aware="java.io.IOException" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="createSocket"
+        native="false"
+        return="java.net.Socket"
+        jni-return="Ljava/net/Socket;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)Ljava/net/Socket;"
+        return-not-null="true">
+        <parameter
+          name="timeout"
+          type="int"
+          jni-type="I" />
+        <exception
+          name="java/io/IOException"
+          type="java.io.IOException"
+          type-generic-aware="java.io.IOException" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="createSocketAndConnect"
+        native="false"
+        return="java.net.Socket"
+        jni-return="Ljava/net/Socket;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;II)Ljava/net/Socket;"
+        return-not-null="true">
+        <parameter
+          name="dstName"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;"
+          not-null="true" />
+        <parameter
+          name="dstPort"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="timeout"
+          type="int"
+          jni-type="I" />
+        <exception
+          name="java/io/IOException"
+          type="java.io.IOException"
+          type-generic-aware="java.io.IOException" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="createSslSocketAndConnect"
+        native="false"
+        return="javax.net.ssl.SSLSocket"
+        jni-return="Ljavax/net/ssl/SSLSocket;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;II)Ljavax/net/ssl/SSLSocket;"
+        return-not-null="true">
+        <parameter
+          name="dstName"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;"
+          not-null="true" />
+        <parameter
+          name="dstPort"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="timeout"
+          type="int"
+          jni-type="I" />
+        <exception
+          name="java/lang/Exception"
+          type="java.lang.Exception"
+          type-generic-aware="java.lang.Exception" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getResponseStatusCode"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/util/ArrayList;)I">
+        <parameter
+          name="headers"
+          type="java.util.ArrayList&lt;java.lang.String&gt;"
+          jni-type="Ljava/util/ArrayList&lt;Ljava/lang/String;&gt;;"
+          not-null="true" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="readContentAsText"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/io/InputStream;I)Ljava/lang/String;"
+        return-not-null="true">
+        <parameter
+          name="inputStream"
+          type="java.io.InputStream"
+          jni-type="Ljava/io/InputStream;"
+          not-null="true" />
+        <parameter
+          name="length"
+          type="int"
+          jni-type="I" />
+        <exception
+          name="java/io/IOException"
+          type="java.io.IOException"
+          type-generic-aware="java.io.IOException" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="readData"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/io/InputStream;[BII)I">
+        <parameter
+          name="inputStream"
+          type="java.io.InputStream"
+          jni-type="Ljava/io/InputStream;"
+          not-null="true" />
+        <parameter
+          name="buffer"
+          type="byte[]"
+          jni-type="[B"
+          not-null="true" />
+        <parameter
+          name="offset"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="length"
+          type="int"
+          jni-type="I" />
+        <exception
+          name="java/io/IOException"
+          type="java.io.IOException"
+          type-generic-aware="java.io.IOException" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="readLine"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/io/InputStream;)Ljava/lang/String;">
+        <parameter
+          name="inputStream"
+          type="java.io.InputStream"
+          jni-type="Ljava/io/InputStream;"
+          not-null="true" />
+        <exception
+          name="java/io/IOException"
+          type="java.io.IOException"
+          type-generic-aware="java.io.IOException" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="readResponseHeaders"
+        native="false"
+        return="java.util.ArrayList&lt;java.lang.String&gt;"
+        jni-return="Ljava/util/ArrayList&lt;Ljava/lang/String;&gt;;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/io/InputStream;)Ljava/util/ArrayList;"
+        return-not-null="true">
+        <parameter
+          name="inputStream"
+          type="java.io.InputStream"
+          jni-type="Ljava/io/InputStream;"
+          not-null="true" />
+        <exception
+          name="java/io/IOException"
+          type="java.io.IOException"
+          type-generic-aware="java.io.IOException" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="NetUtils.FakeX509TrustManager"
+      jni-signature="Lcom/alexvas/utils/NetUtils$FakeX509TrustManager;"
+      source-file-name="NetUtils.java"
+      static="true"
+      visibility="public">
+      <implements
+        name="javax.net.ssl.X509TrustManager"
+        name-generic-aware="javax.net.ssl.X509TrustManager"
+        jni-type="Ljavax/net/ssl/X509TrustManager;" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="NetUtils.FakeX509TrustManager"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="checkClientTrusted"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="([Ljava/security/cert/X509Certificate;Ljava/lang/String;)V">
+        <parameter
+          name="certificates"
+          type="java.security.cert.X509Certificate[]"
+          jni-type="[Ljava/security/cert/X509Certificate;" />
+        <parameter
+          name="authType"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <exception
+          name="java/security/cert/CertificateException"
+          type="java.security.cert.CertificateException"
+          type-generic-aware="java.security.cert.CertificateException" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="checkServerTrusted"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="([Ljava/security/cert/X509Certificate;Ljava/lang/String;)V">
+        <parameter
+          name="certificates"
+          type="java.security.cert.X509Certificate[]"
+          jni-type="[Ljava/security/cert/X509Certificate;" />
+        <parameter
+          name="authType"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <exception
+          name="java/security/cert/CertificateException"
+          type="java.security.cert.CertificateException"
+          type-generic-aware="java.security.cert.CertificateException" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="checkServerTrusted"
+        native="false"
+        return="java.util.List&lt;java.security.cert.X509Certificate&gt;"
+        jni-return="Ljava/util/List&lt;Ljava/security/cert/X509Certificate;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="([Ljava/security/cert/X509Certificate;Ljava/lang/String;Ljava/lang/String;)Ljava/util/List;">
+        <parameter
+          name="chain"
+          type="java.security.cert.X509Certificate[]"
+          jni-type="[Ljava/security/cert/X509Certificate;" />
+        <parameter
+          name="authType"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="host"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <exception
+          name="java/security/cert/CertificateException"
+          type="java.security.cert.CertificateException"
+          type-generic-aware="java.security.cert.CertificateException" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getAcceptedIssuers"
+        native="false"
+        return="java.security.cert.X509Certificate[]"
+        jni-return="[Ljava/security/cert/X509Certificate;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()[Ljava/security/cert/X509Certificate;" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="VideoCodecUtils"
+      jni-signature="Lcom/alexvas/utils/VideoCodecUtils;"
+      source-file-name="VideoCodecUtils.java"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="VideoCodecUtils"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getH264NalUnits"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="([BIILjava/util/ArrayList;)I">
+        <parameter
+          name="data"
+          type="byte[]"
+          jni-type="[B"
+          not-null="true" />
+        <parameter
+          name="dataOffset"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="length"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="foundNals"
+          type="java.util.ArrayList&lt;com.alexvas.utils.VideoCodecUtils.NalUnit&gt;"
+          jni-type="Ljava/util/ArrayList&lt;Lcom/alexvas/utils/VideoCodecUtils$NalUnit;&gt;;"
+          not-null="true" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getH264NalUnitsNumber"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="([BII)I">
+        <parameter
+          name="data"
+          type="byte[]"
+          jni-type="[B"
+          not-null="true" />
+        <parameter
+          name="dataOffset"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="length"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getH264NalUnitType"
+        native="false"
+        return="byte"
+        jni-return="B"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="([BII)B">
+        <parameter
+          name="data"
+          type="byte[]"
+          jni-type="[B" />
+        <parameter
+          name="offset"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="length"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getH264NalUnitTypeString"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(B)Ljava/lang/String;"
+        return-not-null="true">
+        <parameter
+          name="nalUnitType"
+          type="byte"
+          jni-type="B" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="isValidH264NalUnit"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="([BII)Z">
+        <parameter
+          name="data"
+          type="byte[]"
+          jni-type="[B" />
+        <parameter
+          name="offset"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="length"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="searchForH264NalUnitByType"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="([BIII)I">
+        <parameter
+          name="data"
+          type="byte[]"
+          jni-type="[B"
+          not-null="true" />
+        <parameter
+          name="offset"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="length"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="byUnitType"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="searchForH264NalUnitStart"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="([BIILjava/util/concurrent/atomic/AtomicInteger;)I">
+        <parameter
+          name="data"
+          type="byte[]"
+          jni-type="[B"
+          not-null="true" />
+        <parameter
+          name="offset"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="length"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="prefixSize"
+          type="java.util.concurrent.atomic.AtomicInteger"
+          jni-type="Ljava/util/concurrent/atomic/AtomicInteger;"
+          not-null="true" />
+      </method>
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="H265_NAL_AUD"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="byte"
+        type-generic-aware="byte"
+        jni-signature="B"
+        value="35"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="H265_NAL_BLA_N_LP"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="byte"
+        type-generic-aware="byte"
+        jni-signature="B"
+        value="18"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="H265_NAL_BLA_W_LP"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="byte"
+        type-generic-aware="byte"
+        jni-signature="B"
+        value="16"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="H265_NAL_BLA_W_RADL"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="byte"
+        type-generic-aware="byte"
+        jni-signature="B"
+        value="17"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="H265_NAL_CRA_NUT"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="byte"
+        type-generic-aware="byte"
+        jni-signature="B"
+        value="21"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="H265_NAL_EOB_NUT"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="byte"
+        type-generic-aware="byte"
+        jni-signature="B"
+        value="37"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="H265_NAL_EOS_NUT"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="byte"
+        type-generic-aware="byte"
+        jni-signature="B"
+        value="36"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="H265_NAL_FD_NUT"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="byte"
+        type-generic-aware="byte"
+        jni-signature="B"
+        value="38"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="H265_NAL_IDR_N_LP"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="byte"
+        type-generic-aware="byte"
+        jni-signature="B"
+        value="20"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="H265_NAL_IDR_W_RADL"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="byte"
+        type-generic-aware="byte"
+        jni-signature="B"
+        value="19"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="H265_NAL_PPS"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="byte"
+        type-generic-aware="byte"
+        jni-signature="B"
+        value="34"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="H265_NAL_RADL_N"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="byte"
+        type-generic-aware="byte"
+        jni-signature="B"
+        value="6"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="H265_NAL_RADL_R"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="byte"
+        type-generic-aware="byte"
+        jni-signature="B"
+        value="7"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="H265_NAL_RASL_N"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="byte"
+        type-generic-aware="byte"
+        jni-signature="B"
+        value="8"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="H265_NAL_RASL_R"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="byte"
+        type-generic-aware="byte"
+        jni-signature="B"
+        value="9"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="H265_NAL_SEI_PREFIX"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="byte"
+        type-generic-aware="byte"
+        jni-signature="B"
+        value="39"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="H265_NAL_SEI_SUFFIX"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="byte"
+        type-generic-aware="byte"
+        jni-signature="B"
+        value="40"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="H265_NAL_SPS"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="byte"
+        type-generic-aware="byte"
+        jni-signature="B"
+        value="33"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="H265_NAL_STSA_N"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="byte"
+        type-generic-aware="byte"
+        jni-signature="B"
+        value="4"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="H265_NAL_STSA_R"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="byte"
+        type-generic-aware="byte"
+        jni-signature="B"
+        value="5"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="H265_NAL_TRAIL_N"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="byte"
+        type-generic-aware="byte"
+        jni-signature="B"
+        value="0"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="H265_NAL_TRAIL_R"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="byte"
+        type-generic-aware="byte"
+        jni-signature="B"
+        value="1"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="H265_NAL_TSA_N"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="byte"
+        type-generic-aware="byte"
+        jni-signature="B"
+        value="2"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="H265_NAL_TSA_R"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="byte"
+        type-generic-aware="byte"
+        jni-signature="B"
+        value="3"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="H265_NAL_VPS"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="byte"
+        type-generic-aware="byte"
+        jni-signature="B"
+        value="32"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="NAL_AUD"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="byte"
+        type-generic-aware="byte"
+        jni-signature="B"
+        value="9"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="NAL_AUXILIARY_SLICE"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="byte"
+        type-generic-aware="byte"
+        jni-signature="B"
+        value="19"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="NAL_DPA"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="byte"
+        type-generic-aware="byte"
+        jni-signature="B"
+        value="2"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="NAL_DPB"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="byte"
+        type-generic-aware="byte"
+        jni-signature="B"
+        value="3"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="NAL_DPC"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="byte"
+        type-generic-aware="byte"
+        jni-signature="B"
+        value="4"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="NAL_END_SEQUENCE"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="byte"
+        type-generic-aware="byte"
+        jni-signature="B"
+        value="10"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="NAL_END_STREAM"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="byte"
+        type-generic-aware="byte"
+        jni-signature="B"
+        value="11"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="NAL_FILLER_DATA"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="byte"
+        type-generic-aware="byte"
+        jni-signature="B"
+        value="12"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="NAL_FU_A"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="byte"
+        type-generic-aware="byte"
+        jni-signature="B"
+        value="28"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="NAL_FU_B"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="byte"
+        type-generic-aware="byte"
+        jni-signature="B"
+        value="29"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="NAL_IDR_SLICE"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="byte"
+        type-generic-aware="byte"
+        jni-signature="B"
+        value="5"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="NAL_MTAP16"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="byte"
+        type-generic-aware="byte"
+        jni-signature="B"
+        value="26"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="NAL_MTAP24"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="byte"
+        type-generic-aware="byte"
+        jni-signature="B"
+        value="27"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="NAL_PPS"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="byte"
+        type-generic-aware="byte"
+        jni-signature="B"
+        value="8"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="NAL_SEI"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="byte"
+        type-generic-aware="byte"
+        jni-signature="B"
+        value="6"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="NAL_SLICE"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="byte"
+        type-generic-aware="byte"
+        jni-signature="B"
+        value="1"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="NAL_SPS"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="byte"
+        type-generic-aware="byte"
+        jni-signature="B"
+        value="7"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="NAL_SPS_EXT"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="byte"
+        type-generic-aware="byte"
+        jni-signature="B"
+        value="13"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="NAL_STAP_A"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="byte"
+        type-generic-aware="byte"
+        jni-signature="B"
+        value="24"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="NAL_STAP_B"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="byte"
+        type-generic-aware="byte"
+        jni-signature="B"
+        value="25"
+        visibility="public"
+        volatile="false" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      enclosing-method-jni-type="Lcom/alexvas/utils/VideoCodecUtils;"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="VideoCodecUtils.1"
+      jni-signature="Lcom/alexvas/utils/VideoCodecUtils$1;"
+      source-file-name="VideoCodecUtils.java"
+      static="true"
+      visibility="" />
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="VideoCodecUtils.NalUnit"
+      jni-signature="Lcom/alexvas/utils/VideoCodecUtils$NalUnit;"
+      source-file-name="VideoCodecUtils.java"
+      static="true"
+      visibility="public">
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="length"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="offset"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="type"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="byte"
+        type-generic-aware="byte"
+        jni-signature="B"
+        visibility="public"
+        volatile="false" />
+    </class>
+  </package>
+</api>

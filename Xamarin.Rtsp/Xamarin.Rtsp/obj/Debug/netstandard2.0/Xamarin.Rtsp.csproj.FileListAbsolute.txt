@@ -1,0 +1,16 @@
+C:\Users\Lenovo\Desktop\Xamarin-RTSP-mainN\Xamarin-RTSP-main\Xamarin.Rtsp\Xamarin.Rtsp\bin\Debug\netstandard2.0\Xamarin.Rtsp.deps.json
+C:\Users\Lenovo\Desktop\Xamarin-RTSP-mainN\Xamarin-RTSP-main\Xamarin.Rtsp\Xamarin.Rtsp\bin\Debug\netstandard2.0\Xamarin.Rtsp.dll
+C:\Users\Lenovo\Desktop\Xamarin-RTSP-mainN\Xamarin-RTSP-main\Xamarin.Rtsp\Xamarin.Rtsp\bin\Debug\netstandard2.0\Xamarin.Rtsp.pdb
+C:\Users\Lenovo\Desktop\Xamarin-RTSP-mainN\Xamarin-RTSP-main\Xamarin.Rtsp\Xamarin.Rtsp\obj\Debug\netstandard2.0\Xamarin.Rtsp.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Desktop\Xamarin-RTSP-mainN\Xamarin-RTSP-main\Xamarin.Rtsp\Xamarin.Rtsp\obj\Debug\netstandard2.0\Xamarin.Rtsp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\Desktop\Xamarin-RTSP-mainN\Xamarin-RTSP-main\Xamarin.Rtsp\Xamarin.Rtsp\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Lenovo\Desktop\Xamarin-RTSP-mainN\Xamarin-RTSP-main\Xamarin.Rtsp\Xamarin.Rtsp\obj\Debug\netstandard2.0\Views\CameraViewPage.xaml.g.cs
+C:\Users\Lenovo\Desktop\Xamarin-RTSP-mainN\Xamarin-RTSP-main\Xamarin.Rtsp\Xamarin.Rtsp\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+C:\Users\Lenovo\Desktop\Xamarin-RTSP-mainN\Xamarin-RTSP-main\Xamarin.Rtsp\Xamarin.Rtsp\obj\Debug\netstandard2.0\Xamarin.Rtsp.AssemblyInfoInputs.cache
+C:\Users\Lenovo\Desktop\Xamarin-RTSP-mainN\Xamarin-RTSP-main\Xamarin.Rtsp\Xamarin.Rtsp\obj\Debug\netstandard2.0\Xamarin.Rtsp.AssemblyInfo.cs
+C:\Users\Lenovo\Desktop\Xamarin-RTSP-mainN\Xamarin-RTSP-main\Xamarin.Rtsp\Xamarin.Rtsp\obj\Debug\netstandard2.0\Xamarin.Rtsp.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\Xamarin-RTSP-mainN\Xamarin-RTSP-main\Xamarin.Rtsp\Xamarin.Rtsp\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Lenovo\Desktop\Xamarin-RTSP-mainN\Xamarin-RTSP-main\Xamarin.Rtsp\Xamarin.Rtsp\obj\Debug\netstandard2.0\Xamarin.Rtsp.dll
+C:\Users\Lenovo\Desktop\Xamarin-RTSP-mainN\Xamarin-RTSP-main\Xamarin.Rtsp\Xamarin.Rtsp\obj\Debug\netstandard2.0\refint\Xamarin.Rtsp.dll
+C:\Users\Lenovo\Desktop\Xamarin-RTSP-mainN\Xamarin-RTSP-main\Xamarin.Rtsp\Xamarin.Rtsp\obj\Debug\netstandard2.0\Xamarin.Rtsp.pdb
+C:\Users\Lenovo\Desktop\Xamarin-RTSP-mainN\Xamarin-RTSP-main\Xamarin.Rtsp\Xamarin.Rtsp\obj\Debug\netstandard2.0\ref\Xamarin.Rtsp.dll

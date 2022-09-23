@@ -1,0 +1,10 @@
+C:\Users\Lenovo\Desktop\Xamarin-RTSP-mainN\Xamarin-RTSP-main\Xamarin.Rtsp.Lib\bin\Debug\Xamarin.Rtsp.Lib.dll
+C:\Users\Lenovo\Desktop\Xamarin-RTSP-mainN\Xamarin-RTSP-main\Xamarin.Rtsp.Lib\bin\Debug\Xamarin.Rtsp.Lib.pdb
+C:\Users\Lenovo\Desktop\Xamarin-RTSP-mainN\Xamarin-RTSP-main\Xamarin.Rtsp.Lib\obj\Debug\__AndroidLibraryProjects__.zip
+C:\Users\Lenovo\Desktop\Xamarin-RTSP-mainN\Xamarin-RTSP-main\Xamarin.Rtsp.Lib\obj\Debug\MonoAndroid,Version=v11.0.AssemblyAttributes.cs
+C:\Users\Lenovo\Desktop\Xamarin-RTSP-mainN\Xamarin-RTSP-main\Xamarin.Rtsp.Lib\obj\Debug\Xamarin.Rtsp.Lib.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Desktop\Xamarin-RTSP-mainN\Xamarin-RTSP-main\Xamarin.Rtsp.Lib\obj\Debug\stamp\_BuildLibraryImportsCache.stamp
+C:\Users\Lenovo\Desktop\Xamarin-RTSP-mainN\Xamarin-RTSP-main\Xamarin.Rtsp.Lib\obj\Debug\class-parse.rsp
+C:\Users\Lenovo\Desktop\Xamarin-RTSP-mainN\Xamarin-RTSP-main\Xamarin.Rtsp.Lib\obj\Debug\Xamarin.Rtsp.Lib.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\Xamarin-RTSP-mainN\Xamarin-RTSP-main\Xamarin.Rtsp.Lib\obj\Debug\Xamarin.Rtsp.Lib.dll
+C:\Users\Lenovo\Desktop\Xamarin-RTSP-mainN\Xamarin-RTSP-main\Xamarin.Rtsp.Lib\obj\Debug\Xamarin.Rtsp.Lib.pdb
