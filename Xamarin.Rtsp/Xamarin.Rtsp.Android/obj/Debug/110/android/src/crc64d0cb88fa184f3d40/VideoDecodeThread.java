@@ -19,64 +19,72 @@ public class VideoDecodeThread
 	public VideoDecodeThread ()
 	{
 		super ();
-		if (getClass () == VideoDecodeThread.class)
+		if (getClass () == VideoDecodeThread.class) {
 			mono.android.TypeManager.Activate ("Xamarin.Rtsp.Droid.Renderers.Decode.VideoDecodeThread, Xamarin.Rtsp.Android", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 
 	public VideoDecodeThread (java.lang.Runnable p0)
 	{
 		super (p0);
-		if (getClass () == VideoDecodeThread.class)
+		if (getClass () == VideoDecodeThread.class) {
 			mono.android.TypeManager.Activate ("Xamarin.Rtsp.Droid.Renderers.Decode.VideoDecodeThread, Xamarin.Rtsp.Android", "Java.Lang.IRunnable, Mono.Android", this, new java.lang.Object[] { p0 });
+		}
 	}
 
 
 	public VideoDecodeThread (java.lang.Runnable p0, java.lang.String p1)
 	{
 		super (p0, p1);
-		if (getClass () == VideoDecodeThread.class)
+		if (getClass () == VideoDecodeThread.class) {
 			mono.android.TypeManager.Activate ("Xamarin.Rtsp.Droid.Renderers.Decode.VideoDecodeThread, Xamarin.Rtsp.Android", "Java.Lang.IRunnable, Mono.Android:System.String, mscorlib", this, new java.lang.Object[] { p0, p1 });
+		}
 	}
 
 
 	public VideoDecodeThread (java.lang.String p0)
 	{
 		super (p0);
-		if (getClass () == VideoDecodeThread.class)
+		if (getClass () == VideoDecodeThread.class) {
 			mono.android.TypeManager.Activate ("Xamarin.Rtsp.Droid.Renderers.Decode.VideoDecodeThread, Xamarin.Rtsp.Android", "System.String, mscorlib", this, new java.lang.Object[] { p0 });
+		}
 	}
 
 
 	public VideoDecodeThread (java.lang.ThreadGroup p0, java.lang.Runnable p1)
 	{
 		super (p0, p1);
-		if (getClass () == VideoDecodeThread.class)
+		if (getClass () == VideoDecodeThread.class) {
 			mono.android.TypeManager.Activate ("Xamarin.Rtsp.Droid.Renderers.Decode.VideoDecodeThread, Xamarin.Rtsp.Android", "Java.Lang.ThreadGroup, Mono.Android:Java.Lang.IRunnable, Mono.Android", this, new java.lang.Object[] { p0, p1 });
+		}
 	}
 
 
 	public VideoDecodeThread (java.lang.ThreadGroup p0, java.lang.Runnable p1, java.lang.String p2)
 	{
 		super (p0, p1, p2);
-		if (getClass () == VideoDecodeThread.class)
+		if (getClass () == VideoDecodeThread.class) {
 			mono.android.TypeManager.Activate ("Xamarin.Rtsp.Droid.Renderers.Decode.VideoDecodeThread, Xamarin.Rtsp.Android", "Java.Lang.ThreadGroup, Mono.Android:Java.Lang.IRunnable, Mono.Android:System.String, mscorlib", this, new java.lang.Object[] { p0, p1, p2 });
+		}
 	}
 
 
 	public VideoDecodeThread (java.lang.ThreadGroup p0, java.lang.Runnable p1, java.lang.String p2, long p3)
 	{
 		super (p0, p1, p2, p3);
-		if (getClass () == VideoDecodeThread.class)
+		if (getClass () == VideoDecodeThread.class) {
 			mono.android.TypeManager.Activate ("Xamarin.Rtsp.Droid.Renderers.Decode.VideoDecodeThread, Xamarin.Rtsp.Android", "Java.Lang.ThreadGroup, Mono.Android:Java.Lang.IRunnable, Mono.Android:System.String, mscorlib:System.Int64, mscorlib", this, new java.lang.Object[] { p0, p1, p2, p3 });
+		}
 	}
 
 
 	public VideoDecodeThread (java.lang.ThreadGroup p0, java.lang.String p1)
 	{
 		super (p0, p1);
-		if (getClass () == VideoDecodeThread.class)
+		if (getClass () == VideoDecodeThread.class) {
 			mono.android.TypeManager.Activate ("Xamarin.Rtsp.Droid.Renderers.Decode.VideoDecodeThread, Xamarin.Rtsp.Android", "Java.Lang.ThreadGroup, Mono.Android:System.String, mscorlib", this, new java.lang.Object[] { p0, p1 });
+		}
 	}
 
 

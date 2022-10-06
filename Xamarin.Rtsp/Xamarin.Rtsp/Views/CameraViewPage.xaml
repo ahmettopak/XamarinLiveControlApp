@@ -11,8 +11,7 @@
             <Grid.RowDefinitions>
         <RowDefinition Height="450"/>
         <RowDefinition Height="*"/>
-    </Grid.RowDefinitions>
-    <Grid.ColumnDefinitions>
+    </Grid.RowDefinitions>    <Grid.ColumnDefinitions>
         <ColumnDefinition  Width="*"/>
         <ColumnDefinition  Width="*"/>
     </Grid.ColumnDefinitions>
@@ -51,9 +50,11 @@
             <CustomControls:JoystickControl x:Name="JoystickControl1" Grid.Row="1" Grid.Column="1"
                                         HorizontalOptions="Center" VerticalOptions="End" Margin="100,0,0,0" 
                                         HeightRequest="300" WidthRequest="200"/>
-            
-            
-         
+
+            <Label Text="{Binding receivedMessage}" Grid.Row="0" Grid.Column="0"/>
+
+
+
 
         </Grid>
         

@@ -150,7 +150,7 @@ namespace Com.Alexvas.Rtsp {
 				set {
 					const string __id = "mode.Ljava/lang/String;";
 
-					IntPtr native_value = JNIEnv.NewString (value);
+					IntPtr native_value = JNIEnv.NewString ((string)value);
 					try {
 						_members.InstanceFields.SetValue (__id, this, new JniObjectReference (native_value));
 					} finally {
@@ -266,7 +266,7 @@ namespace Com.Alexvas.Rtsp {
 				if (((global::Java.Lang.Object) this).Handle != IntPtr.Zero)
 					return;
 
-				IntPtr native_uriRtsp = JNIEnv.NewString (uriRtsp);
+				IntPtr native_uriRtsp = JNIEnv.NewString ((string)uriRtsp);
 				try {
 					JniArgumentValue* __args = stackalloc JniArgumentValue [4];
 					__args [0] = new JniArgumentValue ((rtspSocket == null) ? IntPtr.Zero : ((global::Java.Lang.Object) rtspSocket).Handle);
@@ -396,8 +396,8 @@ namespace Com.Alexvas.Rtsp {
 			public virtual unsafe global::Com.Alexvas.Rtsp.RtspClient.Builder WithCredentials (string username, string password)
 			{
 				const string __id = "withCredentials.(Ljava/lang/String;Ljava/lang/String;)Lcom/alexvas/rtsp/RtspClient$Builder;";
-				IntPtr native_username = JNIEnv.NewString (username);
-				IntPtr native_password = JNIEnv.NewString (password);
+				IntPtr native_username = JNIEnv.NewString ((string)username);
+				IntPtr native_password = JNIEnv.NewString ((string)password);
 				try {
 					JniArgumentValue* __args = stackalloc JniArgumentValue [2];
 					__args [0] = new JniArgumentValue (native_username);
@@ -463,7 +463,7 @@ namespace Com.Alexvas.Rtsp {
 			public virtual unsafe global::Com.Alexvas.Rtsp.RtspClient.Builder WithUserAgent (string userAgent)
 			{
 				const string __id = "withUserAgent.(Ljava/lang/String;)Lcom/alexvas/rtsp/RtspClient$Builder;";
-				IntPtr native_userAgent = JNIEnv.NewString (userAgent);
+				IntPtr native_userAgent = JNIEnv.NewString ((string)userAgent);
 				try {
 					JniArgumentValue* __args = stackalloc JniArgumentValue [1];
 					__args [0] = new JniArgumentValue (native_userAgent);
@@ -698,7 +698,7 @@ namespace Com.Alexvas.Rtsp {
 			{
 				if (id_onRtspFailed_Ljava_lang_String_ == IntPtr.Zero)
 					id_onRtspFailed_Ljava_lang_String_ = JNIEnv.GetMethodID (class_ref, "onRtspFailed", "(Ljava/lang/String;)V");
-				IntPtr native_message = JNIEnv.NewString (message);
+				IntPtr native_message = JNIEnv.NewString ((string)message);
 				JValue* __args = stackalloc JValue [1];
 				__args [0] = new JValue (native_message);
 				JNIEnv.CallVoidMethod (((global::Java.Lang.Object) this).Handle, id_onRtspFailed_Ljava_lang_String_, __args);
@@ -1003,7 +1003,7 @@ namespace Com.Alexvas.Rtsp {
 				set {
 					const string __id = "sessionDescription.Ljava/lang/String;";
 
-					IntPtr native_value = JNIEnv.NewString (value);
+					IntPtr native_value = JNIEnv.NewString ((string)value);
 					try {
 						_members.InstanceFields.SetValue (__id, this, new JniObjectReference (native_value));
 					} finally {
@@ -1025,7 +1025,7 @@ namespace Com.Alexvas.Rtsp {
 				set {
 					const string __id = "sessionName.Ljava/lang/String;";
 
-					IntPtr native_value = JNIEnv.NewString (value);
+					IntPtr native_value = JNIEnv.NewString ((string)value);
 					try {
 						_members.InstanceFields.SetValue (__id, this, new JniObjectReference (native_value));
 					} finally {
@@ -1139,7 +1139,7 @@ namespace Com.Alexvas.Rtsp {
 				set {
 					const string __id = "request.Ljava/lang/String;";
 
-					IntPtr native_value = JNIEnv.NewString (value);
+					IntPtr native_value = JNIEnv.NewString ((string)value);
 					try {
 						_members.InstanceFields.SetValue (__id, this, new JniObjectReference (native_value));
 					} finally {

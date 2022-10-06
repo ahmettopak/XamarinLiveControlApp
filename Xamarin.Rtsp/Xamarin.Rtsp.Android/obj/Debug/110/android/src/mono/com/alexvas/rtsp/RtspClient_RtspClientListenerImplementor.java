@@ -26,8 +26,9 @@ public class RtspClient_RtspClientListenerImplementor
 	public RtspClient_RtspClientListenerImplementor ()
 	{
 		super ();
-		if (getClass () == RtspClient_RtspClientListenerImplementor.class)
+		if (getClass () == RtspClient_RtspClientListenerImplementor.class) {
 			mono.android.TypeManager.Activate ("Com.Alexvas.Rtsp.RtspClient+IRtspClientListenerImplementor, Xamarin.Rtsp.Lib", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 

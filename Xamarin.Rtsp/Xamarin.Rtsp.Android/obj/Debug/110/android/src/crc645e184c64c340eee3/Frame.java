@@ -18,8 +18,9 @@ public class Frame
 	public Frame ()
 	{
 		super ();
-		if (getClass () == Frame.class)
+		if (getClass () == Frame.class) {
 			mono.android.TypeManager.Activate ("Xamarin.Rtsp.Droid.Renderers.Frame, Xamarin.Rtsp.Android", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 	private java.util.ArrayList refList;

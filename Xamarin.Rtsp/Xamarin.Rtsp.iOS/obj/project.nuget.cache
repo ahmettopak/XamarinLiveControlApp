@@ -1,22 +1,22 @@
 {
   "version": 2,
-  "dgSpecHash": "JRjbhO8Mjxq7xjj59Jf3E420r/XUHrFGhEFKAJLFyh9QFbCdp0KdGynY0KyJCYtHT4W6WUPnPBX2pk4GNYlC7g==",
+  "dgSpecHash": "bMH+J1bwKBaujDqx8oFqEcB3blwtEPyFVGV/OgKMkWdKD4BL5BBNio4PmQ1u7fFYuVOfxPX/dHn4D7AjPOTe7A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lenovo\\Desktop\\Xamarin-RTSP-mainN\\Xamarin-RTSP-main\\Xamarin.Rtsp\\Xamarin.Rtsp.iOS\\Xamarin.Rtsp.iOS.csproj",
+  "projectFilePath": "C:\\Users\\trahm\\source\\repos\\XamarinLiveControlApp\\Xamarin.Rtsp\\Xamarin.Rtsp.iOS\\Xamarin.Rtsp.iOS.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Lenovo\\.nuget\\packages\\ninject\\3.3.5\\ninject.3.3.5.nupkg.sha512",
-    "C:\\Users\\Lenovo\\.nuget\\packages\\sqlite-net-pcl\\1.8.116\\sqlite-net-pcl.1.8.116.nupkg.sha512",
-    "C:\\Users\\Lenovo\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.4\\sqlitepclraw.bundle_green.2.0.4.nupkg.sha512",
-    "C:\\Users\\Lenovo\\.nuget\\packages\\sqlitepclraw.core\\2.0.4\\sqlitepclraw.core.2.0.4.nupkg.sha512",
-    "C:\\Users\\Lenovo\\.nuget\\packages\\sqlitepclraw.provider.dynamic_cdecl\\2.0.4\\sqlitepclraw.provider.dynamic_cdecl.2.0.4.nupkg.sha512",
-    "C:\\Users\\Lenovo\\.nuget\\packages\\system.buffers\\4.4.0\\system.buffers.4.4.0.nupkg.sha512",
-    "C:\\Users\\Lenovo\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
-    "C:\\Users\\Lenovo\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "C:\\Users\\Lenovo\\.nuget\\packages\\system.reflection.emit.ilgeneration\\4.3.0\\system.reflection.emit.ilgeneration.4.3.0.nupkg.sha512",
-    "C:\\Users\\Lenovo\\.nuget\\packages\\system.reflection.emit.lightweight\\4.3.0\\system.reflection.emit.lightweight.4.3.0.nupkg.sha512",
-    "C:\\Users\\Lenovo\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
-    "C:\\Users\\Lenovo\\.nuget\\packages\\xamarin.essentials\\1.7.2\\xamarin.essentials.1.7.2.nupkg.sha512",
-    "C:\\Users\\Lenovo\\.nuget\\packages\\xamarin.forms\\5.0.0.2401\\xamarin.forms.5.0.0.2401.nupkg.sha512"
+    "C:\\Users\\trahm\\.nuget\\packages\\ninject\\3.3.5\\ninject.3.3.5.nupkg.sha512",
+    "C:\\Users\\trahm\\.nuget\\packages\\sqlite-net-pcl\\1.8.116\\sqlite-net-pcl.1.8.116.nupkg.sha512",
+    "C:\\Users\\trahm\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.4\\sqlitepclraw.bundle_green.2.0.4.nupkg.sha512",
+    "C:\\Users\\trahm\\.nuget\\packages\\sqlitepclraw.core\\2.0.4\\sqlitepclraw.core.2.0.4.nupkg.sha512",
+    "C:\\Users\\trahm\\.nuget\\packages\\sqlitepclraw.provider.dynamic_cdecl\\2.0.4\\sqlitepclraw.provider.dynamic_cdecl.2.0.4.nupkg.sha512",
+    "C:\\Users\\trahm\\.nuget\\packages\\system.buffers\\4.4.0\\system.buffers.4.4.0.nupkg.sha512",
+    "C:\\Users\\trahm\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\trahm\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\trahm\\.nuget\\packages\\system.reflection.emit.ilgeneration\\4.3.0\\system.reflection.emit.ilgeneration.4.3.0.nupkg.sha512",
+    "C:\\Users\\trahm\\.nuget\\packages\\system.reflection.emit.lightweight\\4.3.0\\system.reflection.emit.lightweight.4.3.0.nupkg.sha512",
+    "C:\\Users\\trahm\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "C:\\Users\\trahm\\.nuget\\packages\\xamarin.essentials\\1.7.2\\xamarin.essentials.1.7.2.nupkg.sha512",
+    "C:\\Users\\trahm\\.nuget\\packages\\xamarin.forms\\5.0.0.2401\\xamarin.forms.5.0.0.2401.nupkg.sha512"
   ],
   "logs": []
 }

@@ -42,11 +42,11 @@ namespace Com.Alexvas.Utils {
 
 		// Metadata.xml XPath field reference: path="/api/package[@name='com.alexvas.utils']/class[@name='VideoCodecUtils']/field[@name='H265_NAL_IDR_N_LP']"
 		[Register ("H265_NAL_IDR_N_LP")]
-		public const sbyte H265NalİdrNLp = (sbyte) 20;
+		public const sbyte H265NalIdrNLp = (sbyte) 20;
 
 		// Metadata.xml XPath field reference: path="/api/package[@name='com.alexvas.utils']/class[@name='VideoCodecUtils']/field[@name='H265_NAL_IDR_W_RADL']"
 		[Register ("H265_NAL_IDR_W_RADL")]
-		public const sbyte H265NalİdrWRadl = (sbyte) 19;
+		public const sbyte H265NalIdrWRadl = (sbyte) 19;
 
 		// Metadata.xml XPath field reference: path="/api/package[@name='com.alexvas.utils']/class[@name='VideoCodecUtils']/field[@name='H265_NAL_PPS']"
 		[Register ("H265_NAL_PPS")]
@@ -150,7 +150,7 @@ namespace Com.Alexvas.Utils {
 
 		// Metadata.xml XPath field reference: path="/api/package[@name='com.alexvas.utils']/class[@name='VideoCodecUtils']/field[@name='NAL_IDR_SLICE']"
 		[Register ("NAL_IDR_SLICE")]
-		public const sbyte NalİdrSlice = (sbyte) 5;
+		public const sbyte NalIdrSlice = (sbyte) 5;
 
 		// Metadata.xml XPath field reference: path="/api/package[@name='com.alexvas.utils']/class[@name='VideoCodecUtils']/field[@name='NAL_MTAP16']"
 		[Register ("NAL_MTAP16")]

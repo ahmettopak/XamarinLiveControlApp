@@ -57,6 +57,7 @@ Xamarin.Forms.Platform.Android.dll
 Xamarin.Forms.Platform.dll
 Xamarin.Google.Android.Material.dll
 Xamarin.Google.Guava.ListenableFuture.dll
+Xamarin.Rtsp.Lib.dll
 androidx.versionedparcelable.versionedparcelable.aar
 androidx.arch.core.core-runtime.aar
 androidx.lifecycle.lifecycle-runtime.aar
@@ -103,4 +104,3 @@ androidx.asynclayoutinflater.asynclayoutinflater.aar
 androidx.legacy.legacy-support-core-ui.aar
 androidx.legacy.legacy-support-v4.aar
 androidx.browser.browser.aar
-Xamarin.Rtsp.Lib.dll

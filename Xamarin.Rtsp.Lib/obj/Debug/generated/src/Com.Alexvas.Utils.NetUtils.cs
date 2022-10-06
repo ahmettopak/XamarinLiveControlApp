@@ -62,7 +62,7 @@ namespace Com.Alexvas.Utils {
 			{
 				const string __id = "checkClientTrusted.([Ljava/security/cert/X509Certificate;Ljava/lang/String;)V";
 				IntPtr native_certificates = JNIEnv.NewArray (certificates);
-				IntPtr native_authType = JNIEnv.NewString (authType);
+				IntPtr native_authType = JNIEnv.NewString ((string)authType);
 				try {
 					JniArgumentValue* __args = stackalloc JniArgumentValue [2];
 					__args [0] = new JniArgumentValue (native_certificates);
@@ -84,7 +84,7 @@ namespace Com.Alexvas.Utils {
 			{
 				const string __id = "checkServerTrusted.([Ljava/security/cert/X509Certificate;Ljava/lang/String;)V";
 				IntPtr native_certificates = JNIEnv.NewArray (certificates);
-				IntPtr native_authType = JNIEnv.NewString (authType);
+				IntPtr native_authType = JNIEnv.NewString ((string)authType);
 				try {
 					JniArgumentValue* __args = stackalloc JniArgumentValue [2];
 					__args [0] = new JniArgumentValue (native_certificates);
@@ -106,8 +106,8 @@ namespace Com.Alexvas.Utils {
 			{
 				const string __id = "checkServerTrusted.([Ljava/security/cert/X509Certificate;Ljava/lang/String;Ljava/lang/String;)Ljava/util/List;";
 				IntPtr native_chain = JNIEnv.NewArray (chain);
-				IntPtr native_authType = JNIEnv.NewString (authType);
-				IntPtr native_host = JNIEnv.NewString (host);
+				IntPtr native_authType = JNIEnv.NewString ((string)authType);
+				IntPtr native_host = JNIEnv.NewString ((string)host);
 				try {
 					JniArgumentValue* __args = stackalloc JniArgumentValue [3];
 					__args [0] = new JniArgumentValue (native_chain);
@@ -218,7 +218,7 @@ namespace Com.Alexvas.Utils {
 		public static unsafe global::Java.Net.Socket CreateSocketAndConnect (string dstName, int dstPort, int timeout)
 		{
 			const string __id = "createSocketAndConnect.(Ljava/lang/String;II)Ljava/net/Socket;";
-			IntPtr native_dstName = JNIEnv.NewString (dstName);
+			IntPtr native_dstName = JNIEnv.NewString ((string)dstName);
 			try {
 				JniArgumentValue* __args = stackalloc JniArgumentValue [3];
 				__args [0] = new JniArgumentValue (native_dstName);
@@ -236,7 +236,7 @@ namespace Com.Alexvas.Utils {
 		public static unsafe global::Javax.Net.Ssl.SSLSocket CreateSslSocketAndConnect (string dstName, int dstPort, int timeout)
 		{
 			const string __id = "createSslSocketAndConnect.(Ljava/lang/String;II)Ljavax/net/ssl/SSLSocket;";
-			IntPtr native_dstName = JNIEnv.NewString (dstName);
+			IntPtr native_dstName = JNIEnv.NewString ((string)dstName);
 			try {
 				JniArgumentValue* __args = stackalloc JniArgumentValue [3];
 				__args [0] = new JniArgumentValue (native_dstName);

@@ -26,15 +26,17 @@ public class RtspListener
 	public RtspListener ()
 	{
 		super ();
-		if (getClass () == RtspListener.class)
+		if (getClass () == RtspListener.class) {
 			mono.android.TypeManager.Activate ("Xamarin.Rtsp.Droid.Renderers.RtspListener, Xamarin.Rtsp.Android", "", this, new java.lang.Object[] {  });
+		}
 	}
 
 	public RtspListener (android.view.Surface p0, int p1, int p2)
 	{
 		super ();
-		if (getClass () == RtspListener.class)
+		if (getClass () == RtspListener.class) {
 			mono.android.TypeManager.Activate ("Xamarin.Rtsp.Droid.Renderers.RtspListener, Xamarin.Rtsp.Android", "Android.Views.Surface, Mono.Android:System.Int32, mscorlib:System.Int32, mscorlib", this, new java.lang.Object[] { p0, p1, p2 });
+		}
 	}
 
 

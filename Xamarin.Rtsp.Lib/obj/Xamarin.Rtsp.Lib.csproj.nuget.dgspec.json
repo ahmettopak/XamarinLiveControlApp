@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lenovo\\Desktop\\Xamarin-RTSP-mainN\\Xamarin-RTSP-main\\Xamarin.Rtsp.Lib\\Xamarin.Rtsp.Lib.csproj": {}
+    "C:\\Users\\trahm\\source\\repos\\XamarinLiveControlApp\\Xamarin.Rtsp.Lib\\Xamarin.Rtsp.Lib.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lenovo\\Desktop\\Xamarin-RTSP-mainN\\Xamarin-RTSP-main\\Xamarin.Rtsp.Lib\\Xamarin.Rtsp.Lib.csproj": {
+    "C:\\Users\\trahm\\source\\repos\\XamarinLiveControlApp\\Xamarin.Rtsp.Lib\\Xamarin.Rtsp.Lib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\Xamarin-RTSP-mainN\\Xamarin-RTSP-main\\Xamarin.Rtsp.Lib\\Xamarin.Rtsp.Lib.csproj",
+        "projectUniqueName": "C:\\Users\\trahm\\source\\repos\\XamarinLiveControlApp\\Xamarin.Rtsp.Lib\\Xamarin.Rtsp.Lib.csproj",
         "projectName": "Xamarin.Rtsp.Lib",
-        "projectPath": "C:\\Users\\Lenovo\\Desktop\\Xamarin-RTSP-mainN\\Xamarin-RTSP-main\\Xamarin.Rtsp.Lib\\Xamarin.Rtsp.Lib.csproj",
-        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\Desktop\\Xamarin-RTSP-mainN\\Xamarin-RTSP-main\\Xamarin.Rtsp.Lib\\obj\\",
+        "projectPath": "C:\\Users\\trahm\\source\\repos\\XamarinLiveControlApp\\Xamarin.Rtsp.Lib\\Xamarin.Rtsp.Lib.csproj",
+        "packagesPath": "C:\\Users\\trahm\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\trahm\\source\\repos\\XamarinLiveControlApp\\Xamarin.Rtsp.Lib\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\trahm\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

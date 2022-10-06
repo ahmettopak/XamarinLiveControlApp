@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lenovo\\Desktop\\Xamarin-RTSP-mainN\\Xamarin-RTSP-main\\Xamarin.Rtsp\\Xamarin.Rtsp.Android\\Xamarin.Rtsp.Android.csproj": {}
+    "C:\\Users\\trahm\\source\\repos\\XamarinLiveControlApp\\Xamarin.Rtsp\\Xamarin.Rtsp.Android\\Xamarin.Rtsp.Android.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lenovo\\Desktop\\Xamarin-RTSP-mainN\\Xamarin-RTSP-main\\Xamarin.Rtsp.Lib\\Xamarin.Rtsp.Lib.csproj": {
+    "C:\\Users\\trahm\\source\\repos\\XamarinLiveControlApp\\Xamarin.Rtsp.Lib\\Xamarin.Rtsp.Lib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\Xamarin-RTSP-mainN\\Xamarin-RTSP-main\\Xamarin.Rtsp.Lib\\Xamarin.Rtsp.Lib.csproj",
+        "projectUniqueName": "C:\\Users\\trahm\\source\\repos\\XamarinLiveControlApp\\Xamarin.Rtsp.Lib\\Xamarin.Rtsp.Lib.csproj",
         "projectName": "Xamarin.Rtsp.Lib",
-        "projectPath": "C:\\Users\\Lenovo\\Desktop\\Xamarin-RTSP-mainN\\Xamarin-RTSP-main\\Xamarin.Rtsp.Lib\\Xamarin.Rtsp.Lib.csproj",
-        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\Desktop\\Xamarin-RTSP-mainN\\Xamarin-RTSP-main\\Xamarin.Rtsp.Lib\\obj\\",
+        "projectPath": "C:\\Users\\trahm\\source\\repos\\XamarinLiveControlApp\\Xamarin.Rtsp.Lib\\Xamarin.Rtsp.Lib.csproj",
+        "packagesPath": "C:\\Users\\trahm\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\trahm\\source\\repos\\XamarinLiveControlApp\\Xamarin.Rtsp.Lib\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\trahm\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -50,21 +50,21 @@
         }
       }
     },
-    "C:\\Users\\Lenovo\\Desktop\\Xamarin-RTSP-mainN\\Xamarin-RTSP-main\\Xamarin.Rtsp\\Xamarin.Rtsp.Android\\Xamarin.Rtsp.Android.csproj": {
+    "C:\\Users\\trahm\\source\\repos\\XamarinLiveControlApp\\Xamarin.Rtsp\\Xamarin.Rtsp.Android\\Xamarin.Rtsp.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\Xamarin-RTSP-mainN\\Xamarin-RTSP-main\\Xamarin.Rtsp\\Xamarin.Rtsp.Android\\Xamarin.Rtsp.Android.csproj",
+        "projectUniqueName": "C:\\Users\\trahm\\source\\repos\\XamarinLiveControlApp\\Xamarin.Rtsp\\Xamarin.Rtsp.Android\\Xamarin.Rtsp.Android.csproj",
         "projectName": "Xamarin.Rtsp.Android",
-        "projectPath": "C:\\Users\\Lenovo\\Desktop\\Xamarin-RTSP-mainN\\Xamarin-RTSP-main\\Xamarin.Rtsp\\Xamarin.Rtsp.Android\\Xamarin.Rtsp.Android.csproj",
-        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\Desktop\\Xamarin-RTSP-mainN\\Xamarin-RTSP-main\\Xamarin.Rtsp\\Xamarin.Rtsp.Android\\obj\\",
+        "projectPath": "C:\\Users\\trahm\\source\\repos\\XamarinLiveControlApp\\Xamarin.Rtsp\\Xamarin.Rtsp.Android\\Xamarin.Rtsp.Android.csproj",
+        "packagesPath": "C:\\Users\\trahm\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\trahm\\source\\repos\\XamarinLiveControlApp\\Xamarin.Rtsp\\Xamarin.Rtsp.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\trahm\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -78,11 +78,11 @@
         "frameworks": {
           "monoandroid11.0": {
             "projectReferences": {
-              "C:\\Users\\Lenovo\\Desktop\\Xamarin-RTSP-mainN\\Xamarin-RTSP-main\\Xamarin.Rtsp.Lib\\Xamarin.Rtsp.Lib.csproj": {
-                "projectPath": "C:\\Users\\Lenovo\\Desktop\\Xamarin-RTSP-mainN\\Xamarin-RTSP-main\\Xamarin.Rtsp.Lib\\Xamarin.Rtsp.Lib.csproj"
+              "C:\\Users\\trahm\\source\\repos\\XamarinLiveControlApp\\Xamarin.Rtsp.Lib\\Xamarin.Rtsp.Lib.csproj": {
+                "projectPath": "C:\\Users\\trahm\\source\\repos\\XamarinLiveControlApp\\Xamarin.Rtsp.Lib\\Xamarin.Rtsp.Lib.csproj"
               },
-              "C:\\Users\\Lenovo\\Desktop\\Xamarin-RTSP-mainN\\Xamarin-RTSP-main\\Xamarin.Rtsp\\Xamarin.Rtsp\\Xamarin.Rtsp.csproj": {
-                "projectPath": "C:\\Users\\Lenovo\\Desktop\\Xamarin-RTSP-mainN\\Xamarin-RTSP-main\\Xamarin.Rtsp\\Xamarin.Rtsp\\Xamarin.Rtsp.csproj"
+              "C:\\Users\\trahm\\source\\repos\\XamarinLiveControlApp\\Xamarin.Rtsp\\Xamarin.Rtsp\\Xamarin.Rtsp.csproj": {
+                "projectPath": "C:\\Users\\trahm\\source\\repos\\XamarinLiveControlApp\\Xamarin.Rtsp\\Xamarin.Rtsp\\Xamarin.Rtsp.csproj"
               }
             }
           }
@@ -107,20 +107,20 @@
         }
       }
     },
-    "C:\\Users\\Lenovo\\Desktop\\Xamarin-RTSP-mainN\\Xamarin-RTSP-main\\Xamarin.Rtsp\\Xamarin.Rtsp\\Xamarin.Rtsp.csproj": {
+    "C:\\Users\\trahm\\source\\repos\\XamarinLiveControlApp\\Xamarin.Rtsp\\Xamarin.Rtsp\\Xamarin.Rtsp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\Xamarin-RTSP-mainN\\Xamarin-RTSP-main\\Xamarin.Rtsp\\Xamarin.Rtsp\\Xamarin.Rtsp.csproj",
+        "projectUniqueName": "C:\\Users\\trahm\\source\\repos\\XamarinLiveControlApp\\Xamarin.Rtsp\\Xamarin.Rtsp\\Xamarin.Rtsp.csproj",
         "projectName": "Xamarin.Rtsp",
-        "projectPath": "C:\\Users\\Lenovo\\Desktop\\Xamarin-RTSP-mainN\\Xamarin-RTSP-main\\Xamarin.Rtsp\\Xamarin.Rtsp\\Xamarin.Rtsp.csproj",
-        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\Desktop\\Xamarin-RTSP-mainN\\Xamarin-RTSP-main\\Xamarin.Rtsp\\Xamarin.Rtsp\\obj\\",
+        "projectPath": "C:\\Users\\trahm\\source\\repos\\XamarinLiveControlApp\\Xamarin.Rtsp\\Xamarin.Rtsp\\Xamarin.Rtsp.csproj",
+        "packagesPath": "C:\\Users\\trahm\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\trahm\\source\\repos\\XamarinLiveControlApp\\Xamarin.Rtsp\\Xamarin.Rtsp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\trahm\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -129,6 +129,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -176,11 +177,12 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

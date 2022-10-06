@@ -45,7 +45,7 @@ namespace Com.Alexvas.Rtsp {
 			if (((global::Java.Lang.Object) this).Handle != IntPtr.Zero)
 				return;
 
-			IntPtr native_aacMode = JNIEnv.NewString (aacMode);
+			IntPtr native_aacMode = JNIEnv.NewString ((string)aacMode);
 			try {
 				JniArgumentValue* __args = stackalloc JniArgumentValue [1];
 				__args [0] = new JniArgumentValue (native_aacMode);

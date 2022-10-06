@@ -18,24 +18,27 @@ public class JoystickRenderer
 	public JoystickRenderer (android.content.Context p0)
 	{
 		super (p0);
-		if (getClass () == JoystickRenderer.class)
+		if (getClass () == JoystickRenderer.class) {
 			mono.android.TypeManager.Activate ("FormsJoystick.Droid.CustomRenderers.JoystickRenderer, Xamarin.Rtsp.Android", "Android.Content.Context, Mono.Android", this, new java.lang.Object[] { p0 });
+		}
 	}
 
 
 	public JoystickRenderer (android.content.Context p0, android.util.AttributeSet p1)
 	{
 		super (p0, p1);
-		if (getClass () == JoystickRenderer.class)
+		if (getClass () == JoystickRenderer.class) {
 			mono.android.TypeManager.Activate ("FormsJoystick.Droid.CustomRenderers.JoystickRenderer, Xamarin.Rtsp.Android", "Android.Content.Context, Mono.Android:Android.Util.IAttributeSet, Mono.Android", this, new java.lang.Object[] { p0, p1 });
+		}
 	}
 
 
 	public JoystickRenderer (android.content.Context p0, android.util.AttributeSet p1, int p2)
 	{
 		super (p0, p1, p2);
-		if (getClass () == JoystickRenderer.class)
+		if (getClass () == JoystickRenderer.class) {
 			mono.android.TypeManager.Activate ("FormsJoystick.Droid.CustomRenderers.JoystickRenderer, Xamarin.Rtsp.Android", "Android.Content.Context, Mono.Android:Android.Util.IAttributeSet, Mono.Android:System.Int32, mscorlib", this, new java.lang.Object[] { p0, p1, p2 });
+		}
 	}
 
 	private java.util.ArrayList refList;
